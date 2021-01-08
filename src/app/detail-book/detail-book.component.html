@@ -1,6 +1,7 @@
-<h3>Detail Book</h3>
+<div style="height: 50%; margin-left: 25%">
+  <h3>Detail Book</h3>
 
-  <table>
+  <table width="100%">
     <tr>
       <td>Title</td>
       <td><p type="text" formControlName="title" id="title">{{book.title}}</td>
@@ -14,5 +15,7 @@
       <td><p type="text" formControlName="description" id="description">{{book.description}}</td>
     </tr>
   </table>
+  <a [routerLink]="['']" class="btn btn-outline-info mb-3">Back</a>
+</div>
 
 

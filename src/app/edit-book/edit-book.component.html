@@ -1,5 +1,5 @@
-<p>edit-class works!</p>
-
+<div style="height: 50%; margin-left: 25%">
+<h3>Edit book</h3>
 <form [formGroup]="editForm" (ngSubmit)="onUpdate()">
   <table>
     <tr>
@@ -16,5 +16,7 @@
     </tr>
   </table>
   <button type="submit" class="btn btn-outline-danger">Update</button>
+
 </form>
+<a [routerLink]="['']" class="btn btn-outline-info mb-3">Back</a>
 
