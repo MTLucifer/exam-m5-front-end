@@ -1,0 +1,25 @@
+
+<div style="width: 50%; margin-left: 25%">
+  <h3>List of class</h3>
+  <a [routerLink]="['/create']" class="btn btn-outline-info mb-3">Create new book</a>
+  <table border="solid,1" width="100%" style="text-align: center">
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Author</th>
+      <th></th>
+    </tr>
+    <tr *ngFor="let u of bookClass">
+      <td><a [routerLink]="'/detail/' + u.id">{{u.id}}</a></td>
+      <td>{{u.title}}</td>
+      <td>{{u.author}}</td>
+      <td width="20%">
+        <a [routerLink]="'/edit/' + u.id" class="btn btn-sm btn-outline-info">Edit</a>
+        <a [routerLink]="'/delete/' + u.id" class="btn btn-sm btn-outline-danger ml-1">Delete</a>
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+

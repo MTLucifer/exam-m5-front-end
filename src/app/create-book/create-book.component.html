@@ -1,0 +1,23 @@
+<div style="width:50%; margin-left: 25%; text-align: center ">
+  <h3>Add New Book</h3>
+  <form [formGroup]="createForm" (ngSubmit)="createNewBook()">
+  <table border="solid " width="100%">
+    <tr>
+      <th>Title</th>
+      <td><input type="text" formControlName="title" id="title"></td>
+    </tr>
+    <tr>
+      <th>Author</th>
+      <td><input type="text" formControlName="author" id="author"></td>
+    </tr>
+    <tr>
+      <th>Description</th>
+      <td><textarea style="width: auto; height: 100px" type="text" formControlName="description" id="description"></textarea></td>
+    </tr>
+    <tr>
+      <th colspan="2"><button type="submit" class="btn btn-outline-dark m-4">Add</button></th>
+    </tr>
+  </table>
+
+</form>
+</div>
